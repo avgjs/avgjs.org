@@ -1,0 +1,145 @@
+* {
+  font-family: "PingFang SC", "Noto Sans CJK SC", "Source Han Sans CN", "Microsoft YahHei", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+nav {
+  width: 100%;
+  padding: 5px 12px;
+}
+
+nav > li {
+  display: inline-block;
+  padding: 8px 8px;
+  cursor: pointer;
+  color: #666;
+}
+
+nav > li::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: relative;
+  bottom: -2px;
+  background: #666;
+  transition: all 0.3s ease-in-out;
+  transform: scale3d(0,1,1);
+  transform-origin: 50% 0;
+}
+
+nav > li:hover::after {
+  transform: scale3d(1,1,1);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: #ddd;
+}
+
+section#background {
+  position: absolute;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 96px;
+  position: relative;
+  margin: 0 auto;
+  top: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h3 {
+  color: #666;
+  font-weight: 200;
+  font-size: 42px;
+  position: relative;
+  margin: 0 auto;
+  top: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+section#sub {
+  position: relative;
+  margin: 0 auto;
+  top: 30%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+section#sub input {
+  width: 20em;
+  max-width: 95%;
+  padding: 5px 18px;
+  border-radius: 8px;
+  font-weight: 200;
+  font-size: 26px;
+  text-align: center;
+  opacity: 0.6;
+  outline: none;
+  transition: opacity 1s ease-in-out;
+}
+
+section#sub > p {
+  opacity: 0;
+  margin: 5px auto;
+  font-weight: 400;
+  font-size: 18px;
+  color: grey;
+  transition: opacity .6s ease-in-out;
+}
+
+section#sub > a {
+  display: inline-block;
+  width: 120px;
+  height: 38px;
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 1;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: all .3s ease-in;
+}
+
+section#sub > a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+section#sub > a:first-of-type {
+  margin-right: 70px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 5px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
